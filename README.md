@@ -1,4 +1,4 @@
-## Docker Cheatsheet
+## Docker Notes
 Contains a list of simple docker commands.
 
 ### Images and containers
