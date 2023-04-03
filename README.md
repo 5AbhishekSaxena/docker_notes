@@ -1,7 +1,14 @@
 ## Docker Notes
 Contains a list of simple docker commands.
 
-### Images and containers
+## <a name="table-of-contents"></a>Toable of Content
+- [Images and Containers](#images-and-containers)
+- [Run a container](#run-a-container)
+- [Logs](#logs)
+- [Build](#build)
+- [Clean up](#clean-up)
+
+#### <a name="images-and-containers">Images and containers</a> <sup>[Back ⇈](#table-of-contents)</sup>
 - `docker images`
 List all the docker images.
 
@@ -17,7 +24,7 @@ Pull the image from Docker hub of the specified version
 - `docker pull <image_name>`
 Same as before but teh version is "latest" which is the default version is pulled from the DockerHub.
 
-### Run a container
+### <a name="run-a-container"></a>Run a container <sup>[Back ⇈](#table-of-contents)</sup>
 - `docker run <image_name>:<tag>`
 Runs the container for the docker image.
 Please note: 
@@ -40,15 +47,15 @@ Restarts the exited/stopped container.
 - `docker stop <container_name> or <container_id>`
 Stops the container with the given id or name.
 
-### Logs
+### <a name="logs"></a>Logs <sup>[Back ⇈](#table-of-contents)</sup>
 - docker logs <container_id> or <container_name>`
 View logs of the container.
 
-### Build
+### <a name="build"></a>Build <sup>[Back ⇈](#table-of-contents)</sup>
 - `docker build -t <image_name>:<tag> . // or --tag = and "." refers to the current folder`
 build a custom docker image.
 
-### Clean up
+### <a name="clean-up"></a>Clean up <sup>[Back ⇈](#table-of-contents)</sup>
 - `docker container prune`
 Delete all the stopped containers
 
