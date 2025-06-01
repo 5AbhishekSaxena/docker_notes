@@ -36,6 +36,12 @@ Contains a list of simple docker commands.
 -   `docker pull <image_name>`
     Same as before but teh version is "latest" which is the default version is pulled from the DockerHub.
 
+-   `docker image inspect <image-name>:<tag>`
+    Show the image details in json format.
+
+-   `docker image inspect <image-name>:<tag> --format='{{json .Config.ExposedPorts }}'`
+    Show the filtered detail of the image like exposed ports in json format.
+
 ### <a name="run-a-container"></a>Run a container <sup>[Back ⇈](#table-of-contents)</sup>
 
 -   `docker run <image_name>:<tag>`
