@@ -148,8 +148,25 @@ You can either use `docker compose` or `docker-compose`(old) for the below comma
 -   `docker-compose -f <docker-compose yml or yaml file> up -d`
     Start the services in the docker compose file in detach mode.
 
+-   `docker-compose start`
+    - Restarts the stopped containers.
+    - Preserves volumes and data.
+
+-   `docker-compose restart`
+    - Equivalent to stop + start.
+    - Useful if you want to apply environment variable changes or updates.
+
+-   `docker-compose stop`
+    - Stops all services defined in the Compose file.
+    - Containers remain created and can be restarted later.
+    - Networks and volumes are left intact.
+
+-   `docker-compose stop <container-name>`
+    - Stops only the specified container(<container-name>).
+    - Other services continue running.
+ 
 -   `docker-compose down`
-    Stop the services in the docker compose.
+    - Stops and removes containers, networks, and volumes.       
 
 -   `docker-compsoe ps -a`
     Lists all the docker compose projects.
