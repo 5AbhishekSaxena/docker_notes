@@ -169,4 +169,15 @@ You can either use `docker compose` or `docker-compose`(old) for the below comma
     - Stops and removes containers, networks, and volumes.       
 
 -   `docker-compsoe ps -a`
-    Lists all the docker compose projects.
+    Lists all the docker compose projects.       
+
+-   `docker-compsoe ps`
+    Lists all containers of the current compose project.     
+
+-   `docker-compsoe -p <name> ps`
+    Lists all containers of the named compose project.       
+
+-   `docker-compsoe ls`
+    Lists all docker compose projects.       
+
+  
