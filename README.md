@@ -168,8 +168,8 @@ You can either use `docker compose` or `docker-compose`(old) for the below comma
 -   `docker-compose down`
     - Stops and removes containers, networks, and volumes.       
 
--   `docker-compsoe ps -a`
-    Lists all the docker compose projects.       
+-   `docker-compsoe ls -a`
+    Lists all the docker compose projects, inclding the ones that are stopped.       
 
 -   `docker-compsoe ps`
     Lists all containers of the current compose project.     
@@ -178,6 +178,6 @@ You can either use `docker compose` or `docker-compose`(old) for the below comma
     Lists all containers of the named compose project.       
 
 -   `docker-compsoe ls`
-    Lists all docker compose projects.       
+    Lists all docker compose running projects.       
 
   
